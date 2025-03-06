@@ -10,6 +10,8 @@ function solution(genres, plays) {
         data[val].songs[idx] = plays[idx];
     });
 
+    console.log(data);
+
     const sortedTitle = Object.entries(data)
         .sort(([, a], [, b]) => b.total - a.total)
         .map(([key]) => key);
@@ -24,3 +26,5 @@ function solution(genres, plays) {
 
     return answer;
 }
+
+console.log(solution(["classic", "pop", "classic", "classic", "pop"], [500, 600, 150, 800, 2500]));
