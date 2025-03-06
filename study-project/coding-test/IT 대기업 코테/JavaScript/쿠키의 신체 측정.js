@@ -46,9 +46,9 @@ const solution = (input) => {
         if (data[i][leftLegPos[1] + 2] === "*") rightLegLength++;
     }
 
-    let leftArmLength = head[1] - firstArmPos[1];
-    let rightArmLength = armLength - leftArmLength - 1;
-    let waistLength = leftLegPos[0] - firstArmPos[0] - 1;
+    let leftArmLength = head[1] - firstArmPos[1]; // 왼쪽 팔 길이
+    let rightArmLength = armLength - leftArmLength - 1; // 오른쪽 팔 길이
+    let waistLength = leftLegPos[0] - firstArmPos[0] - 1; // 허리 길이
 
     let answer = [
         [head[0] + 2, head[1] + 1],
