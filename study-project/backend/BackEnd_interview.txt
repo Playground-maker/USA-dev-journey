@@ -40,3 +40,20 @@
 3. Spring mvc life cycle?
 3-1. filter와 interceptor의 차이점
 ---------------------------------------------------------------
+
+
+1. HashMap vs HashTable vs ConcurrentHashMap 차이점(구현방식, thread 관련...)
+1.1 thread safe
+
+
+2. Java Immutable Object
+2.1 Java String이 불변객체인 이유
+
+3. new String()과 ""(리터럴 방식)의 차이에 대해
+
+4. reflection / Java Dynamic Proxy 설명해 보시오
+
+5. 자바의 Garbage Collector는 어떻게 동작하는지
+5.1 GC 알고리즘은 무엇이 있는지
+
+6. 제네릭이란 무엇이고 왜 사용하는가
