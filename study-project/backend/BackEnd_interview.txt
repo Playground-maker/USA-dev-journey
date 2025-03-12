@@ -1,1 +1,12 @@
 여기에 백엔드 2세트 질문 및 답안 작성하기
+
+1. 스프링 프레임워크는 왜 생긴 것인가?
+
+2. 스프링 DI란?
+2-1. 객체 주입 방식
+2-2. 생성자 방식의 이점
+2-3. @Autowired, @Resource, @Inject의 차이점
+
+
+3. Spring mvc life cycle?
+3-1. filter와 interceptor의 차이점
