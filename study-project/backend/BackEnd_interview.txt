@@ -1,1 +1,59 @@
-여기에 백엔드 2세트 질문 및 답안 작성하기
+
+
+1. 컴파일 과정을 설명하시오
+1-1. compiler vs interpreter
+
+2. String / StringBuilder / StringBuffer의 차이점
+2.1 thread safe 설명
+2.2 자바에서 String이 불변 객체인 이유(내부적 메커니즘)
+
+3. 자바의 접근 제어자의 종류와 특징
+
+4. OOP의 4가지 특징(추상화, 캡슐화, 상속, 다형성)
+4.1 캡슐화와 은닉화의 차이
+4.2 오버로드와 오버라이딩의 차이
+
+5. OOP의 5대 원칙(SOLID)
+
+6. JVM 구조(중요 !)
+
+7. 클래스 / 객체 / 인스턴스의 차이
+
+8. interface와 abstract class의 차이점
+
+9. Checked Exception vs Unchecked Exception
+
+10. Call by reference vs Call by value
+10-1. 자바는 어디에 해당하는가?
+
+
+
+---------------------------------------------------------------
+1. 스프링 프레임워크는 왜 생긴 것인가?
+
+2. 스프링 DI란?
+2-1. 객체 주입 방식
+2-2. 생성자 방식의 이점
+2-3. @Autowired, @Resource, @Inject의 차이점
+
+
+3. Spring mvc life cycle?
+3-1. filter와 interceptor의 차이점
+---------------------------------------------------------------
+
+
+1. HashMap vs HashTable vs ConcurrentHashMap 차이점(구현방식, thread 관련...)
+1.1 thread safe
+
+
+2. Java Immutable Object
+2.1 Java String이 불변객체인 이유
+
+3. new String()과 ""(리터럴 방식)의 차이에 대해
+
+4. reflection / Java Dynamic Proxy 설명해 보시오
+
+5. 자바의 Garbage Collector는 어떻게 동작하는지
+5.1 GC 알고리즘은 무엇이 있는지
+
+6. 제네릭이란 무엇이고 왜 사용하는가
