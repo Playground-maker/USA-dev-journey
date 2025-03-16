@@ -9,27 +9,28 @@ const solution = (input) => {
 
     data = data.sort((a, b) => a - b);
 
-    for (let i = 0; i < count; i++) {
-        let target = data[i];
-        let rear = i === count - 1 ? count - 2 : count - 1;
+    for (let t = 0; t < count; t++) {
+        let front = 0;
+        let rear = count - 1;
+        let target = data[t];
         let sum = 0;
 
-        for (let j = 0; j < count; j++) {
-            if (i === j) continue;
-            let front = data[j];
-            sum = data[rear] + front;
-
-            while (sum >= target) {
-                if (sum === target) break;
-                rear--;
-                if (j === rear) break;
-                if (rear !== i) sum = data[rear] + front;
+        while (front < rear) {
+            if (front === t) {
+                front++;
+                continue;
             }
-            if (j === rear) break;
+            if (rear === t) {
+                rear--;
+                continue;
+            }
+
+            sum = data[front] + data[rear];
             if (sum === target) {
                 answer++;
                 break;
-            }
+            } else if (sum > target) rear--;
+            else if (sum < target) front++;
         }
     }
 
