@@ -27,17 +27,17 @@ private : 해당 클래스 내에서만 접근 가능
 --------------------------------------------------------------
 
 1. 컴파일 과정을 설명하시오
-1-1. compiler vs interpreter
+V 1-1. compiler vs interpreter
 
 2. String / StringBuilder / StringBuffer의 차이점
 2.1 thread safe 설명
 2.2 자바에서 String이 불변 객체인 이유(내부적 메커니즘)
 
-3. 자바의 접근 제어자의 종류와 특징
+V 3. 자바의 접근 제어자의 종류와 특징
 
 4. OOP의 4가지 특징(추상화, 캡슐화, 상속, 다형성)
 4.1 캡슐화와 은닉화의 차이
-4.2 오버로드와 오버라이딩의 차이
+V 4.2 오버로드와 오버라이딩의 차이
 
 5. OOP의 5대 원칙(SOLID)
 
@@ -45,7 +45,7 @@ private : 해당 클래스 내에서만 접근 가능
 
 7. 클래스 / 객체 / 인스턴스의 차이
 
-8. interface와 abstract class의 차이점
+V 8. interface와 abstract class의 차이점
 
 9. Checked Exception vs Unchecked Exception
 
