@@ -46,7 +46,7 @@ public class Main {
         for(int i = 0; i < m; i++) {
             for(int j = 0; j < n; j++) {
                 if(!visited[i][j]) {
-                    sizeList.add(bfs(i, j));
+                    sizeList.add(dfs(i, j));
                     count++;
                 }
             }
@@ -60,31 +60,20 @@ public class Main {
         }
     }
 
-    private static int bfs(int x, int y) {
+    private static int dfs(int x, int y) {
 
-        Queue<int[]> q = new LinkedList<>();
-        q.add(new int[]{x, y});
         visited[x][y] = true;
         int area = 1;
 
-        while(!q.isEmpty()) {
-            int[] current = q.poll();
-            int cx = current[0];
-            int cy = current[1];
-            for(int i = 0; i < 4; i++) {
-                int nx = cx + dx[i];
-                int ny = cy + dy[i];
-
-                if(nx >= 0 && nx < m && ny >= 0 && ny < n) {
-                    if(!visited[nx][ny] && board[nx][ny] == 0) {
-                        visited[nx][ny] = true;
-                        q.add(new int[]{nx, ny});
-                        area++;
-                    }
+        for(int i = 0; i < 4; i++) {
+            int nx = x + dx[i];
+            int ny = y + dy[i];
+            if(nx >= 0 && nx < m && ny >= 0 && ny < n) {
+                if(!visited[nx][ny] && board[nx][ny] == 0) {
+                    area += dfs(nx, ny);
                 }
             }
         }
-
         return area;
     }
 
