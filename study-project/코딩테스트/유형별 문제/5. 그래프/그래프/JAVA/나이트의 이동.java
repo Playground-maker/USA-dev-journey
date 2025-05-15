@@ -47,6 +47,7 @@ public class Main {
                 int nx = cx + dx[i];
                 int ny = cy + dy[i];
                 if(nx >= 0 && nx < l && ny >= 0 && ny < l) {
+                    // map[nx][ny] == 0 없어도 되는 이유 체크!
                     if(!visited[nx][ny] && map[nx][ny] == 0) {
                         map[nx][ny] = map[cx][cy] + 1;
                         q.add(new int[]{nx, ny});
