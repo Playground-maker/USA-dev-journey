@@ -1,3 +1,6 @@
+import java.util.*;
+import java.io.*;
+
 public class Main {
     public static void main(String[] args) throws IOException {
         // 입력을 빠르게 받기 위한 BufferedReader 사용
