@@ -34,7 +34,7 @@ class Solution
             int rank = 0;
             for(int i = 0; i < N; i++) {
                 if(total[i] == KScore) {
-                    rank = N - i -1;
+                    rank = N - i - 1;
                 }
             }
 
