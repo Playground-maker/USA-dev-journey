@@ -16,33 +16,33 @@ public class Main {
         int midY = n/2;
 
         int num = 2;
-        int dirNum = 1;
+        int dirNum = 0;
 
         map[midX][midY] = 1;
-        StringBuilder sb = new StringBuilder();
-        while(num < n*n) {
+
+        while(num <= n * n) {
 
             if(dirNum > 3) dirNum -= 4;
 
             int nx = x + dx[dirNum];
             int ny = y + dy[dirNum];
 
-            if(nx >= 0 && nx <= n - 1 && ny >= 0 && ny <= n - 1) {
+            if(nx >= 0 && nx < n && ny >= 0 && ny < n) {
                 map[nx][ny] = num;
             }
 
 
             num++;
+            dirNum++;
         }
 
+        StringBuilder sb = new StringBuilder();
         for(int i = 0; i < n; i++) {
             for(int j = 0; j < n; j++) {
                 sb.append(map[i][j]).append(" ");
             }
             sb.append("\n");
         }
-
-        System.out.println(sb.toString());
 
         int targetX = 0;
         int targetY = 0;
@@ -55,6 +55,7 @@ public class Main {
             }
         }
 
-        System.out.println((targetX+1) + " " + (targetY+1));
+        System.out.println(sb.toString());
+        System.out.println((targetX + 1) + " " + (targetY + 1));
     }
 }

@@ -3,9 +3,6 @@ import java.io.*;
 
 public class Main {
 
-    static boolean[][] visited;
-    static int[][] map;
-
     static int p, m, l;
     static String n;
 
