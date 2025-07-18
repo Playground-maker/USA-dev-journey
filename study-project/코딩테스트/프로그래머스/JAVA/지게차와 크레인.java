@@ -36,19 +36,28 @@ class Solution {
         visited = new boolean[n][m];
 
         for(int i = 0; i < n; i++) {
-
+            if(!visited[i][0]) dfs(i, 0, request);
+            if(!visited[i][m-1]) dfs(i, m-1, request);
         }
 
         for(int i = 0; i < m; i++) {
-
+            if(!visited[0][i]) dfs(0, i, request);
+            if(!visited[n-1][i]) dfs(n-1, i, request);
         }
     }
 
     private static void Crane(char request) {
-
+        for(int i = 0; i < n; i++) {
+            for(int j = 0; j < m; j++) {
+                if(map[i][j] == request) {
+                    answer--;
+                    map[i][j] = 0;
+                }
+            }
+        }
     }
 
-    private void dfs(int x, int y, char request) {
+    private static void dfs(int x, int y, char request) {
         visited[x][y] = true;
 
         if(map[x][y] == 0) {
